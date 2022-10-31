@@ -7,6 +7,10 @@ function App() {
   useEffect(() => {
     console.log("inicio");
     console.log("mierda");
+    console.log("esto es una prueba");
+    console.log("tongazo");
+    console.log("quiero que vuelva");
+    console.log("por qué son tan pelotudos");
   });
 
   return (
