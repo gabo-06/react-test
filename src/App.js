@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     console.log("inicio");
-  }, []);
+  });
 
   return (
     <div>
