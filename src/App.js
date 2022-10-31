@@ -1,23 +1,23 @@
-import logo from "./logo.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
+  const [contador, setContador] = useState(0);
+
+  useEffect(() => {
+    console.log("inicio");
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload carajo.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button
+        onClick={() => {
+          setContador(contador + 1);
+        }}
+      >
+        contar
+      </button>
+      <div>El contador está en: {contador}</div>
     </div>
   );
 }
