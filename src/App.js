@@ -6,6 +6,7 @@ function App() {
 
   useEffect(() => {
     console.log("inicio");
+    console.log("mierda");
   });
 
   return (
